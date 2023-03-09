@@ -1,0 +1,29 @@
+<html>
+<head>
+    <script src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        //java script foto 1
+        $(document).ready(function () {
+            $(".sembunyi1").click(function () { $(".foto").hide("slow") });
+            $(".tampil1").click(function () { $(".foto").show("slow") });
+            
+            //Java script Foto 2
+            $(".sembunyi2").click(function () { $(".foto2").hide("slow") });
+            $(".tampil2").click(function () { $(".foto2").show("slow") });
+
+        });
+    </script>
+</head>
+
+<body>
+    <!--Hide show foto 2-->
+    <button class="sembunyi1">sembunyikan</button>
+    <button class="tampil1">tampilkan</button>
+    <p><img style="width: 300;" class="foto" src="Foto/Masbro1.jpg"></p>
+
+    <!--Hide show foto 2-->
+    <button class="sembunyi2">sembunyikan</button>
+    <button class="tampil2">tampilkan</button>
+    <p><img style="width: 300;" class="foto2" src="Foto/Masbro2.jfif"></p>
+</body>
+</html>

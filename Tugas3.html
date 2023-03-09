@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setTimeout(function () {
+                //untuk fungsi fade out 
+                $(".sembunyi").click (function () {  $("#kotak").fadeOut("slow", function () {
+                    $("#kotak");
+                });})
+                //mengembalikan opasitas
+                $(".Fadein").click(function () {
+                $("#kotak").css("opacity",1)
+                });
+                //Untuk fungsi fadein
+                $(".Fadein").click (function () {  $("#kotak").fadeIn("slow", function () {
+                    $("#kotak");
+                }); })
+                //Untuk meredupkan opasitas
+                $(".FadeTo").click (function () {  $("#kotak").fadeTo(300,0.3, function () {
+                    $("#kotak");
+                }); })
+            }, 300);
+        });
+    </script>
+    <style type="text/css">
+        /*Untuk mengatur kotak yang akan ditampilkan*/
+        #kotak {
+            width: 300px;
+            height: 300px;
+            background: yellow;
+            border: 3px solid black;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Untuk menampilkan program pada halaman web-->
+    <h3 id="kotak">
+    </h3>
+    <button class="Fadein">Fade In</button>
+    <button class="sembunyi">Fade Out</button>
+    <button class="FadeTo">Fade to 0,3s</button>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        //Synttax untuk menggganti warna saat di ttekan 2x
+        $(document).ready(function () {
+            $(".kotak").dblclick(function () {
+                if ( $(this).css("background-color") == "rgb(0, 0, 255)") {
+                    $(this).css("background-color","red"); 
+                } else {
+                    $(this).css("background-color","blue"); 
+                }
+               
+                
+            });
+
+        });
+    </script>
+    <style type="text/css">
+        /* Css untuk mengatur kottttak yang akan di tekan */
+        .container{
+            display: flex;
+        }
+        .kotak {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(0, 0, 255);
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Untuk menampilkan pada halaman web-->
+    <h1>Klik 2x untuk mengubah warna</h1>
+    <div class="container">
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+    <div class="kotak"></div>
+</div>
+</body>
+
+</html>
